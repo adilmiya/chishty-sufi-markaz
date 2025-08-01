@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chishty Sufi Markaz - Home</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="logo">
+                    <a href="index.html"><img src="MylogoCSM.PNG" alt="Chishty Sufi Markaz Logo"></a>
+                </div>
+                <ul>
+                    <li><a href="index.html" class="active">Home</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="khwaja.html">Khwaja Gharib Nawaz</a></li>
+                    <li><a href="contact.html">Contact Us</a></li>
+                </ul>
+            </div>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="container">
+            <h2>Chishty Sufi Markaz</h2>
+            <p>Embracing the timeless teachings of Khwaja Moinuddin Chishty and the profound importance of Ziyarat.</p>
+            <a href="about.html" class="cta-button">Learn More About Us</a>
+        </div>
+    </section>
+
+    <section id="about-summary" class="content-section">
+        <div class="container">
+            <h2>About Us</h2>
+            <div class="service-card">
+                <div class="service-icon">🕌</div>
+                <h3>Our Sacred Lineage</h3>
+                <p>We are the esteemed Gaddi Nashin (hereditary spiritual torchbearers) of the Holy Shrine of Hazrat Khwaja Moinuddin Chishti (H.A.), affectionately known as Khwaja Gharib Nawaz, the Sultan of Hind. Our profound connection to this sacred site stems from a direct lineage tracing back to Hazrat Khwaja Syed Fakhruddin Gurdezi Chishti (H.A.), the revered Khadim-e-Khas (chief attendant) and first cousin of Gharib Nawaz (H.A.).</p>
+                <a href="about.html" class="service-contact">Read Full Story</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="khwaja-summary" class="content-section alt-section">
+        <div class="container">
+            <h2>Khwaja Moinuddin Chishty</h2>
+            <div class="service-card">
+                <div class="service-icon">🌟</div>
+                <h3>A Beacon of Divine Love</h3>
+                <p>Explore the timeless teachings, the sacred Dargah Sharif, and the annual Urs celebration of Khwaja Moinuddin Chishty. Delve into his life, spiritual journey, and the profound impact he had on spreading the message of love and peace in India.</p>
+                <a href="khwaja.html" class="service-contact">Discover More</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact-summary" class="content-section">
+        <div class="container">
+            <h2>Contact Us</h2>
+            <div class="service-card">
+                <div class="service-icon">📞</div>
+                <h3>Connect With Us</h3>
+                <p>Connect with Syed Adil Hussain, Gaddi Nashin Dargah Ajmer Sharif. Find our address, phone number, email, and information on how to make offerings and payments.</p>
+                <a href="contact.html" class="service-contact">Get in Touch</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-box">
+        <div class="container">
+            <h3>Experience the Spiritual Journey</h3>
+            <p>Join us in preserving and sharing the sacred teachings of Khwaja Moinuddin Chishty</p>
+            <a href="contact.html" class="cta-button">Contact Us Today</a>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="about.html">About Us</a></li>
+                        <li><a href="khwaja.html">Khwaja Gharib Nawaz</a></li>
+                        <li><a href="contact.html">Contact Us</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Contact</h3>
+                    <ul>
+                        <li>Syed Adil Hussain</li>
+                        <li>Gaddi Nashin Dargah Ajmer Sharif</li>
+                        <li>WhatsApp: <a href="https://wa.me/919828033441" target="_blank">+919828033441</a></li>
+                        <li>Email: <a href="mailto:adilmiya@gmail.com">adilmiya@gmail.com</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Chishty Sufi Markaz. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Add active class to current page in navigation
+        document.addEventListener("DOMContentLoaded", function() {
+            const currentPage = window.location.pathname.split("/").pop();
+            const navLinks = document.querySelectorAll("nav a");
+            
+            navLinks.forEach(link => {
+                const linkPage = link.getAttribute("href");
+                if (linkPage === currentPage || (currentPage === "" && linkPage === "index.html")) {
+                    link.classList.add("active");
+                }
+            });
+        });
+    </script>
+</body>
+</html>
+
