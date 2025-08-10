@@ -16,8 +16,9 @@
                 <div class="logo">
                     <a href="index.html"><img src="MylogoCSM.PNG" alt="Chishty Sufi Markaz Logo"></a>
                 </div>
+                <div class="menu-toggle" id="mobile-menu">☰</div>
                 <ul class="nav-links">
-                    <li><a href="#home">Home</a></li>
+                    <li><a href="index.html">Home</a></li>
                     <li><a href="about.html">About Us</a></li>
                     <li><a href="khwaja.html">Khwaja Gharib Nawaz</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
@@ -106,16 +107,14 @@
         </div>
     </footer>
 
-</body>
-</html>
-
-
-
-
     <a href="https://wa.me/919828033441" class="whatsapp-float" target="_blank">
         <img src="whatsapp-icon.png" alt="WhatsApp" style="width:50px; height:50px;">
     </a>
 
-
-
-
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
