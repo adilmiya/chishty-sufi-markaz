@@ -16,9 +16,10 @@
                 <div class="logo">
                     <a href="index.html"><img src="MylogoCSM.PNG" alt="Chishty Sufi Markaz Logo"></a>
                 </div>
+                <div class="menu-toggle" id="mobile-menu">☰</div>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
-                    <li><a href="#about">About Us</a></li>
+                    <li><a href="about.html" class="active">About Us</a></li>
                     <li><a href="khwaja.html">Khwaja Gharib Nawaz</a></li>
                     <li><a href="contact.html">Contact Us</a></li>
                 </ul>
@@ -36,11 +37,9 @@
     <section id="about-content" class="content-section">
         <div class="container">
             <h2>Our Sacred Lineage</h2>
-            
             <p>We are the esteemed Gaddi Nashin (hereditary spiritual torchbearers) of the Holy Shrine of Hazrat Khwaja Moinuddin Chishti (H.A.), affectionately known as Khwaja Gharib Nawaz, the Sultan of Hind. Our profound connection to this sacred site stems from a direct lineage tracing back to Hazrat Khwaja Syed Fakhruddin Gurdezi Chishti (H.A.), the revered Khadim-e-Khas (chief attendant) and first cousin of Gharib Nawaz (H.A.).</p>
-            
             <p>This sacred lineage has been preserved through generations, with each successor meticulously chosen based on spiritual merit and divine guidance. The mantle of responsibility has been passed down through the centuries, ensuring the continuity of spiritual service and the preservation of the sacred traditions associated with the Dargah Sharif.</p>
-            
+
             <div class="spiritual-lineage">
                 <h3>Our Spiritual Lineage</h3>
                 <ul>
@@ -53,7 +52,7 @@
                     <li>Syed Adil Hussain (Current Gaddi Nashin)</li>
                 </ul>
             </div>
-            
+
             <blockquote>
                 "To serve the shrine of Khwaja Gharib Nawaz is not merely a duty but a profound spiritual privilege that connects us to the divine through service to humanity."
             </blockquote>
@@ -63,28 +62,24 @@
     <section id="duties" class="content-section alt-section">
         <div class="container">
             <h2>Our Sacred Duties</h2>
-            
             <p>As the Gaddi Nashin of the Dargah Sharif, we are entrusted with numerous sacred responsibilities that extend beyond mere administrative duties. Our role encompasses spiritual guidance, preservation of traditions, and ensuring that the sanctity of the shrine remains intact for generations to come.</p>
-            
+
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">🕌</div>
                     <h3>Custodianship</h3>
                     <p>Maintaining the sanctity and spiritual atmosphere of the Dargah Sharif, ensuring it remains a place of peace, devotion, and divine connection for all visitors.</p>
                 </div>
-                
                 <div class="service-card">
                     <div class="service-icon">📜</div>
                     <h3>Preservation</h3>
                     <p>Safeguarding the ancient traditions, rituals, and spiritual practices associated with the shrine, ensuring they are passed down authentically to future generations.</p>
                 </div>
-                
                 <div class="service-card">
                     <div class="service-icon">🤲</div>
                     <h3>Spiritual Guidance</h3>
                     <p>Providing spiritual counsel and guidance to devotees, helping them navigate their spiritual journey and deepen their connection with the divine.</p>
                 </div>
-                
                 <div class="service-card">
                     <div class="service-icon">🌍</div>
                     <h3>Global Outreach</h3>
@@ -97,22 +92,19 @@
     <section id="hospitality" class="content-section">
         <div class="container">
             <h2>Our Tradition of Hospitality</h2>
-            
             <p>Following the footsteps of Khwaja Gharib Nawaz, who was renowned for his boundless generosity and hospitality, we continue to uphold these values in our service to visitors and pilgrims from around the world.</p>
-            
+
             <div class="services-grid">
                 <div class="service-card">
                     <div class="service-icon">🍲</div>
                     <h3>Langar (Community Meals)</h3>
                     <p>Continuing the tradition of providing free meals to all visitors, regardless of faith, caste, or social status, embodying the principle of equality before the divine.</p>
                 </div>
-                
                 <div class="service-card">
                     <div class="service-icon">🏠</div>
                     <h3>Pilgrim Accommodation</h3>
                     <p>Assisting devotees with finding suitable accommodation during their pilgrimage, ensuring their stay is comfortable and conducive to spiritual reflection.</p>
                 </div>
-                
                 <div class="service-card">
                     <div class="service-icon">🧭</div>
                     <h3>Guidance Services</h3>
@@ -158,15 +150,14 @@
         </div>
     </footer>
 
-</body>
-</html>
-
-
-
-
     <a href="https://wa.me/919828033441" class="whatsapp-float" target="_blank">
         <img src="whatsapp-icon.png" alt="WhatsApp" style="width:50px; height:50px;">
     </a>
 
-
-
+    <script>
+        document.getElementById('mobile-menu').addEventListener('click', function() {
+            document.querySelector('.nav-links').classList.toggle('show');
+        });
+    </script>
+</body>
+</html>
